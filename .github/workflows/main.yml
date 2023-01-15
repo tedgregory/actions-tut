@@ -1,0 +1,8 @@
+name: Demo flow
+on: [workflow_dispatch]
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Print info
+        run: echo GH Actions work
