@@ -3,6 +3,10 @@ on: [workflow_dispatch]
 jobs:
   print:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: Print info
         run: echo GH Actions work
+      - name: Print multiline
+        run: |
+          echo Line 1
+          echo Line 2
